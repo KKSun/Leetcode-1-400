@@ -1,0 +1,3923 @@
+<!-- saved from url=(0045)https://cspiration.com/leetcodeClassification -->
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+    <title>Leetcode 分类顺序第二版</title>
+    <link href="./Leetcode 分类顺序第二版_files/github-bf51422f4bb36427d391e4b75a1daa083c2d840e.css" media="all"
+          rel="stylesheet" type="text/css">
+    <link href="./Leetcode 分类顺序第二版_files/github2-d731afd4f624c99a4b19ad69f3083cd6d02b81d5.css" media="all"
+          rel="stylesheet" type="text/css">
+    <link href="./Leetcode 分类顺序第二版_files/zTreeStyle.css" media="all" rel="stylesheet" type="text/css">
+    <style>
+        pre {
+            counter-reset: line-numbering;
+            border: solid 1px #d9d9d9;
+            border-radius: 0;
+            background: #fff;
+            padding: 0;
+            line-height: 23px;
+            margin-bottom: 30px;
+            white-space: pre;
+            overflow-x: auto;
+            word-break: inherit;
+            word-wrap: inherit;
+        }
+
+        pre a::before {
+            content: counter(line-numbering);
+            counter-increment: line-numbering;
+            padding-right: 1em; /* space after numbers */
+            width: 25px;
+            text-align: right;
+            opacity: 0.7;
+            display: inline-block;
+            color: #aaa;
+            background: #eee;
+            margin-right: 16px;
+            padding: 2px 10px;
+            font-size: 13px;
+            -webkit-touch-callout: none;
+            -webkit-user-select: none;
+            -khtml-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
+        pre a:first-of-type::before {
+            padding-top: 10px;
+        }
+
+        pre a:last-of-type::before {
+            padding-bottom: 10px;
+        }
+
+        pre a:only-of-type::before {
+            padding: 10px;
+        }
+
+        .highlight {
+            background-color: #ffffcc
+        }
+
+        /* RIGHT */
+    </style>
+    <style id="c6b17352-528d-41c1-b421-1d5c74779544">.pb-toast-main {
+        z-index: 2147483639 !important;
+        position: fixed !important;
+        top: -50px !important;
+        left: 0px !important;
+        width: 100% !important;
+        height: 44px !important;
+        border: none !important;
+        box-shadow: 0 1px 0 0 #b6b4b6 !important;
+        transition: top 0.3s;
+    }
+
+    .pb-toast-main-move {
+        top: 0px !important;
+    }
+
+    .pb-toast-main-show {
+        transition: none;
+        top: 0px !important;
+    }
+
+    #pb_jq_tipsWrapper {
+        position: fixed !important;
+        width: 230px !important;
+        background-color: rgba(0, 0, 0, 0.8);
+        box-shadow: 0 8px 20px 0 rgba(0, 0, 0, 0.2);
+        font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif !important;
+        border-radius: 5px !important;
+        color: #ffffff !important;
+        z-index: 2147483641 !important;
+        padding: 15px !important;
+        font-size: 14px !important;
+    }
+
+    #pb_jq_tipsWrapper:before {
+        position: absolute !important;
+        top: -10px !important;
+        right: 60px !important;
+        display: inline-block !important;
+        border-right: 10px solid transparent !important;
+        border-bottom: 10px solid #000 !important;
+        border-left: 10px solid transparent !important;
+        border-bottom-color: rgba(0, 0, 0, 0.2) !important;
+        content: '' !important;
+    }
+
+    #pb_jq_tipsWrapper:after {
+        position: absolute !important;
+        top: -9px !important;
+        right: 60px !important;
+        display: inline-block !important;
+        border-right: 9px solid transparent !important;
+        border-bottom: 9px solid #000 !important;
+        border-left: 9px solid transparent !important;
+        content: '' !important;
+    }
+
+    #pb-link-copied-message {
+        display: none;
+        position: fixed;
+        width: 90px;
+        height: 29px;
+        opacity: 0;
+        border-radius: 100px;
+        background-color: rgba(0, 0, 0, 0.7);
+        z-index: 2147483641;
+        font-family: "Lucida Grande", tahoma, verdana, arial, sans-serif !important;
+        font-size: 13px;
+        line-height: 29px;
+        text-align: center;
+        color: #ffffff;
+    }</style>
+</head>
+<body>
+<div>
+    <div style="width:25%;">
+        <ul id="tree" class="ztree"
+            style="width: 326px; overflow: auto; position: fixed; z-index: 2147483647; border: 0px none; left: 0px; top: 0px; height: 854px;">
+            <li id="tree_1" class="level0" tabindex="0" hidefocus="true" treenode=""><span id="tree_1_switch" title=""
+                                                                                           class="button level0 switch roots_docu"
+                                                                                           treenode_switch=""></span><a
+                    id="tree_1_a" class="level0 curSelectedNode" treenode_a="" onclick="" target="_blank" style=""
+                    title="Table of Content"><span id="tree_1_ico" title="" treenode_ico="" class="button ico_docu"
+                                                   style="width:0px;height:0px;"></span><span id="tree_1_span">Table of Content</span></a>
+            </li>
+            <li id="tree_2" class="level0" tabindex="0" hidefocus="true" treenode=""><span id="tree_2_switch" title=""
+                                                                                           class="button level0 switch bottom_open"
+                                                                                           treenode_switch=""></span><a
+                    id="tree_2_a" class="level0" treenode_a="" onclick=""
+                    href="https://cspiration.com/leetcodeClassification#1" target="_self" style=""
+                    title="1. Leetcode 分类顺序表第二版(增加重点250题)"><span id="tree_2_ico" title="" treenode_ico=""
+                                                                 class="button ico_open"
+                                                                 style="width:0px;height:0px;"></span><span
+                    id="tree_2_span">1. Leetcode 分类顺序表第二版(增加重点250题)</span></a>
+                <ul id="tree_2_ul" class="level0 " style="display:block">
+                    <li id="tree_3" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_3_switch"
+                                                                                                   title=""
+                                                                                                   class="button level1 switch center_open"
+                                                                                                   treenode_switch=""></span><a
+                            id="tree_3_a" class="level1" treenode_a="" onclick=""
+                            href="https://cspiration.com/leetcodeClassification#101" target="_self" style=""
+                            title="1.1. 前言"><span id="tree_3_ico" title="" treenode_ico="" class="button ico_open"
+                                                  style="width:0px;height:0px;"></span><span
+                            id="tree_3_span">1.1. 前言</span></a>
+                        <ul id="tree_3_ul" class="level1 line" style="display:block">
+                            <li id="tree_4" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_4_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_4_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10101"
+                                                                 target="_self" style="" title="1.1.1. 背景"><span
+                                    id="tree_4_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_4_span">1.1.1. 背景</span></a>
+                            </li>
+                            <li id="tree_5" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_5_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_5_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10102"
+                                                                 target="_self" style="" title="1.1.2. 关于我"><span
+                                    id="tree_5_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_5_span">1.1.2. 关于我</span></a>
+                            </li>
+                            <li id="tree_6" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_6_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_6_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10103"
+                                                                 target="_self" style="" title="1.1.3. 致所有本书使用者"><span
+                                    id="tree_6_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span
+                                    id="tree_6_span">1.1.3. 致所有本书使用者</span></a></li>
+                            <li id="tree_7" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_7_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_7_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10104"
+                                                                 target="_self" style="" title="1.1.4. 网站"><span
+                                    id="tree_7_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_7_span">1.1.4. 网站</span></a>
+                            </li>
+                            <li id="tree_8" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_8_switch" title="" class="button level2 switch bottom_docu"
+                                    treenode_switch=""></span><a id="tree_8_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10105"
+                                                                 target="_self" style=""
+                                                                 title="1.1.5. 北美刷题找工实习微信群"><span id="tree_8_ico"
+                                                                                                  title=""
+                                                                                                  treenode_ico=""
+                                                                                                  class="button ico_docu"
+                                                                                                  style="width:0px;height:0px;"></span><span
+                                    id="tree_8_span">1.1.5. 北美刷题找工实习微信群</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="tree_9" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_9_switch"
+                                                                                                   title=""
+                                                                                                   class="button level1 switch center_docu"
+                                                                                                   treenode_switch=""></span><a
+                            id="tree_9_a" class="level1" treenode_a="" onclick=""
+                            href="https://cspiration.com/leetcodeClassification#102" target="_self" style=""
+                            title="1.2. Leetcode 题目视频讲解"><span id="tree_9_ico" title="" treenode_ico=""
+                                                               class="button ico_docu"
+                                                               style="width:0px;height:0px;"></span><span
+                            id="tree_9_span">1.2. Leetcode 题目视频讲解</span></a></li>
+                    <li id="tree_10" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_10_switch"
+                                                                                                    title=""
+                                                                                                    class="button level1 switch center_open"
+                                                                                                    treenode_switch=""></span><a
+                            id="tree_10_a" class="level1" treenode_a="" onclick=""
+                            href="https://cspiration.com/leetcodeClassification#103" target="_self" style=""
+                            title="1.3. Leetcode 分类顺序"><span id="tree_10_ico" title="" treenode_ico=""
+                                                             class="button ico_open"
+                                                             style="width:0px;height:0px;"></span><span
+                            id="tree_10_span">1.3. Leetcode 分类顺序</span></a>
+                        <ul id="tree_10_ul" class="level1 line" style="display:block">
+                            <li id="tree_11" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_11_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_11_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10301"
+                                                                 target="_self" style="" title="1.3.1. Array"><span
+                                    id="tree_11_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_11_span">1.3.1. Array</span></a>
+                            </li>
+                            <li id="tree_12" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_12_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_12_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10302"
+                                                                 target="_self" style="" title="1.3.2. String"><span
+                                    id="tree_12_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span
+                                    id="tree_12_span">1.3.2. String</span></a></li>
+                            <li id="tree_13" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_13_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_13_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10303"
+                                                                 target="_self" style="" title="1.3.3. Math"><span
+                                    id="tree_13_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_13_span">1.3.3. Math</span></a>
+                            </li>
+                            <li id="tree_14" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_14_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_14_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10304"
+                                                                 target="_self" style="" title="1.3.4. Tree"><span
+                                    id="tree_14_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_14_span">1.3.4. Tree</span></a>
+                            </li>
+                            <li id="tree_15" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_15_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_15_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10305"
+                                                                 target="_self" style=""
+                                                                 title="1.3.5. Backtracking"><span id="tree_15_ico"
+                                                                                                   title=""
+                                                                                                   treenode_ico=""
+                                                                                                   class="button ico_docu"
+                                                                                                   style="width:0px;height:0px;"></span><span
+                                    id="tree_15_span">1.3.5. Backtracking</span></a></li>
+                            <li id="tree_16" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_16_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_16_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10306"
+                                                                 target="_self" style=""
+                                                                 title="1.3.6. Dynamic Programming"><span
+                                    id="tree_16_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_16_span">1.3.6. Dynamic Programming</span></a>
+                            </li>
+                            <li id="tree_17" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_17_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_17_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10307"
+                                                                 target="_self" style="" title="1.3.7. LinkedList"><span
+                                    id="tree_17_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span
+                                    id="tree_17_span">1.3.7. LinkedList</span></a></li>
+                            <li id="tree_18" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_18_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_18_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10308"
+                                                                 target="_self" style=""
+                                                                 title="1.3.8. Binary Search"><span id="tree_18_ico"
+                                                                                                    title=""
+                                                                                                    treenode_ico=""
+                                                                                                    class="button ico_docu"
+                                                                                                    style="width:0px;height:0px;"></span><span
+                                    id="tree_18_span">1.3.8. Binary Search</span></a></li>
+                            <li id="tree_19" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_19_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_19_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10309"
+                                                                 target="_self" style="" title="1.3.9. Matrix"><span
+                                    id="tree_19_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span
+                                    id="tree_19_span">1.3.9. Matrix</span></a></li>
+                            <li id="tree_20" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_20_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_20_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10310"
+                                                                 target="_self" style=""
+                                                                 title="1.3.10. DFS &amp; BFS"><span id="tree_20_ico"
+                                                                                                     title=""
+                                                                                                     treenode_ico=""
+                                                                                                     class="button ico_docu"
+                                                                                                     style="width:0px;height:0px;"></span><span
+                                    id="tree_20_span">1.3.10. DFS &amp; BFS</span></a></li>
+                            <li id="tree_21" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_21_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_21_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10311"
+                                                                 target="_self" style=""
+                                                                 title="1.3.11. Stack &amp; PriorityQueue"><span
+                                    id="tree_21_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_21_span">1.3.11. Stack &amp; PriorityQueue</span></a>
+                            </li>
+                            <li id="tree_22" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_22_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_22_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10312"
+                                                                 target="_self" style=""
+                                                                 title="1.3.12. Bit Manipulation"><span id="tree_22_ico"
+                                                                                                        title=""
+                                                                                                        treenode_ico=""
+                                                                                                        class="button ico_docu"
+                                                                                                        style="width:0px;height:0px;"></span><span
+                                    id="tree_22_span">1.3.12. Bit Manipulation</span></a></li>
+                            <li id="tree_23" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_23_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_23_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10313"
+                                                                 target="_self" style=""
+                                                                 title="1.3.13. Topological Sort"><span id="tree_23_ico"
+                                                                                                        title=""
+                                                                                                        treenode_ico=""
+                                                                                                        class="button ico_docu"
+                                                                                                        style="width:0px;height:0px;"></span><span
+                                    id="tree_23_span">1.3.13. Topological Sort</span></a></li>
+                            <li id="tree_24" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_24_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_24_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10314"
+                                                                 target="_self" style="" title="1.3.14. Random"><span
+                                    id="tree_24_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span
+                                    id="tree_24_span">1.3.14. Random</span></a></li>
+                            <li id="tree_25" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_25_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_25_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10315"
+                                                                 target="_self" style="" title="1.3.15. Graph"><span
+                                    id="tree_25_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span
+                                    id="tree_25_span">1.3.15. Graph</span></a></li>
+                            <li id="tree_26" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_26_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_26_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10316"
+                                                                 target="_self" style=""
+                                                                 title="1.3.16. Union FInd"><span id="tree_26_ico"
+                                                                                                  title=""
+                                                                                                  treenode_ico=""
+                                                                                                  class="button ico_docu"
+                                                                                                  style="width:0px;height:0px;"></span><span
+                                    id="tree_26_span">1.3.16. Union FInd</span></a></li>
+                            <li id="tree_27" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_27_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_27_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10317"
+                                                                 target="_self" style="" title="1.3.17. Trie"><span
+                                    id="tree_27_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_27_span">1.3.17. Trie</span></a>
+                            </li>
+                            <li id="tree_28" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_28_switch" title="" class="button level2 switch bottom_docu"
+                                    treenode_switch=""></span><a id="tree_28_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10318"
+                                                                 target="_self" style="" title="1.3.18. Design"><span
+                                    id="tree_28_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span
+                                    id="tree_28_span">1.3.18. Design</span></a></li>
+                        </ul>
+                    </li>
+                    <li id="tree_29" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_29_switch"
+                                                                                                    title=""
+                                                                                                    class="button level1 switch center_open"
+                                                                                                    treenode_switch=""></span><a
+                            id="tree_29_a" class="level1" treenode_a="" onclick=""
+                            href="https://cspiration.com/leetcodeClassification#104" target="_self" style=""
+                            title="1.4. Leetcode 前 400 重点 250 题"><span id="tree_29_ico" title="" treenode_ico=""
+                                                                       class="button ico_open"
+                                                                       style="width:0px;height:0px;"></span><span
+                            id="tree_29_span">1.4. Leetcode 前 400 重点 250 题</span></a>
+                        <ul id="tree_29_ul" class="level1 line" style="display:block">
+                            <li id="tree_30" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_30_switch" title="" class="button level2 switch center_docu"
+                                    treenode_switch=""></span><a id="tree_30_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10401"
+                                                                 target="_self" style="" title="1.4.1. 划分说明"><span
+                                    id="tree_30_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_30_span">1.4.1. 划分说明</span></a>
+                            </li>
+                            <li id="tree_31" class="level2" tabindex="0" hidefocus="true" treenode=""><span
+                                    id="tree_31_switch" title="" class="button level2 switch bottom_docu"
+                                    treenode_switch=""></span><a id="tree_31_a" class="level2" treenode_a="" onclick=""
+                                                                 href="https://cspiration.com/leetcodeClassification#10402"
+                                                                 target="_self" style="" title="1.4.2. 重点题目"><span
+                                    id="tree_31_ico" title="" treenode_ico="" class="button ico_docu"
+                                    style="width:0px;height:0px;"></span><span id="tree_31_span">1.4.2. 重点题目</span></a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li id="tree_32" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_32_switch"
+                                                                                                    title=""
+                                                                                                    class="button level1 switch center_docu"
+                                                                                                    treenode_switch=""></span><a
+                            id="tree_32_a" class="level1" treenode_a="" onclick=""
+                            href="https://cspiration.com/leetcodeClassification#105" target="_self" style=""
+                            title="1.5. 参考网站"><span id="tree_32_ico" title="" treenode_ico="" class="button ico_docu"
+                                                    style="width:0px;height:0px;"></span><span id="tree_32_span">1.5. 参考网站</span></a>
+                    </li>
+                    <li id="tree_33" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_33_switch"
+                                                                                                    title=""
+                                                                                                    class="button level1 switch center_docu"
+                                                                                                    treenode_switch=""></span><a
+                            id="tree_33_a" class="level1" treenode_a="" onclick=""
+                            href="https://cspiration.com/leetcodeClassification#106" target="_self" style=""
+                            title="1.6. 微信公众号：cspiration"><span id="tree_33_ico" title="" treenode_ico=""
+                                                                class="button ico_docu"
+                                                                style="width:0px;height:0px;"></span><span
+                            id="tree_33_span">1.6. 微信公众号：cspiration</span></a></li>
+                    <li id="tree_34" class="level1" tabindex="0" hidefocus="true" treenode=""><span id="tree_34_switch"
+                                                                                                    title=""
+                                                                                                    class="button level1 switch bottom_docu"
+                                                                                                    treenode_switch=""></span><a
+                            id="tree_34_a" class="level1" treenode_a="" onclick=""
+                            href="https://cspiration.com/leetcodeClassification#107" target="_self" style=""
+                            title="1.7. 个人微信号：cspiration"><span id="tree_34_ico" title="" treenode_ico=""
+                                                                class="button ico_docu"
+                                                                style="width:0px;height:0px;"></span><span
+                            id="tree_34_span">1.7. 个人微信号：cspiration</span></a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+    <div id="readme" style="width: 70%; margin-left: 25%;">
+        <article class="markdown-body">
+            <h1 id="1">1. Leetcode 分类顺序表第二版(增加重点250题)</h1>
+            <p>
+                <img src="./Leetcode 分类顺序第二版_files/edwardshi.jpg" style="margin-left:300px;height: 200px;" alt="">
+            </p>
+            <h2 id="101">1.1. 前言</h2>
+            <p>​ 这本书是根据我个人的理解，对Leetcode（<a href="https://leetcode.com/%EF%BC%89">https://leetcode.com/）</a>
+                这个网站中的算法题目重新进行分类划分，并以<strong>先易后难</strong>的顺序重新进行排序。旨在为大家节省时间，可以更好更有效率的做题。</p>
+            <h3 id="10101">1.1.1. 背景</h3>
+            <p>​
+                在如今的计算机行业领域，无论是在校学生参加计算机算法编程竞赛ACM，还是对于求职找工作的毕业生，甚至在职跳槽的计算机从业工作者，都逃不开“刷题”这座大山。尤其是在北美，Google，Facebook，Microsoft，Amazon
+                等等大公司，无一不考刷题，以算法面试为主。而无论是北美留学生，还是工作几年的上班族，想进大公司，唯一的出路就是刷题。同样，在国内，也已经逐渐向北美靠近，很多大公司也在招人面试中加入算法面试。而Leetcode这个算法题目网站，已经是目前为止最贴近大公司算法面试题目的网站。全世界的学生，在职人员，都以Leetcode为主，无论每个人的初衷是什么，我们都要在此挑战一件事——刷题！</p>
+            <h3 id="10102">1.1.2. 关于我</h3>
+            <p>​ 我自己在16年初来到美国，本科是Software Engineering，研究生是Computer
+                Science。在北美留学两年时间里，除了上课可以说刷题这件事陪伴了我整个两年多的留学生涯。16年秋季找实习17年秋季找全职，从15年前辈那里知道了CS专业的当年形式一片大好，到自己亲历16年的急转直下：各大公司提前招满，有的甚至12月不到就已经停止招人，17年更是每况愈下。但即使形式再差，CS也依旧算是北美第一专业。</p>
+            <p>​
+                所以整个北美对于刷题一事，是人人逃不过的大山，但现在来说，刷题最重要的资源Leetcode网站，并没有一个非常好的分类顺序。Leetcode本身的分类做的的确不错，但对于题目的顺序并没有给出，而且有的分类并不是非常好。所以我根据我自己的刷题经验总结，对Leetcode这个网站的题目重新进行分类划分，并按照先易后难的顺序，针对每个分类下面，进行排序。旨在让从来没有刷过题的人，可以有一个系统性的参考。</p>
+            <p>​ 我个人本身两年来刷题3000多，对Leetcode中大多数题目可以说了如指掌，并且把Leetcode 800道题每道题，进行一题多解 +
+                最优解，思路解法步骤，时间空间复杂度的讲解，录成视频（现以更新完前400道）。我自己创业，现已经有了自己的团队，也有各种 Google Facebook
+                等诸多大公司的人员加入。也曾有像是Leetcode的员工，在我的公众号问我是否想加入Leetcode团队。所以我想通过我自己对于题目的理解，通过我们的努力，给大家提供一个刷Leetcode的解决方案。</p>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10103">1.1.3. 致所有本书使用者</h3>
+            <p>​ 本书以先易后难 + 分类而成。如果是第一次刷题的小伙伴，最好以本书的顺序为主，可以减少很多刷题的负担。对于类别的先后顺序我并没有给，这个我自己正在总结。因为现阶段我自己开算法直播课为一部分人讲解北美算法基础
+                + 面试，也在自己做这个对于分类的顺序，所以会在第二版或者第三版出这个顺序。现在的这个顺序是包括了Leetcode前400题（除去16到SQL题目）。</p>
+            <p>​
+                然后很多小伙伴问我刷400道够不够的问题，我的回答是完全够的，只要能每一道题理解到位，400题已经足以应付公司面试题。Leetcode在16年末也仅仅只有400题，800是近一年才涨出来的。做完400道基本就需要3个月的时间了，慢一点4个月也是有可能的。所以我建议大家不要多刷，精刷
+                + 总结更重要。</p>
+            <h3 id="10104">1.1.4. 网站</h3>
+            <p>​ 如果有小伙伴想看我录的前400道题目的解法视频，请到Cspiration（<a href="https://cspiration.com/%EF%BC%89">https://cspiration.com/）</a>
+                购买观看，我还会持续更新把后400题更新完毕，并会出更多的课程帮助大家。</p>
+            <h3 id="10105">1.1.5. 北美刷题找工实习微信群</h3>
+            <p>​
+                如果你是一个人刷题想认识更多来自五湖四海的小伙伴，我们有免费的微信群可以加入，旨在让每个人不是孤军奋战，同胞间相互帮助分享资源，为大家排忧解难。当然，如果你对刷题或者找工有什么疑问，出现瓶颈，可以咨询我，如果我能帮到的我都会尽量给解答。</p>
+            <p>​ 个人微信号：cspiration（加我拉你入群～）</p>
+            <p>​ 微信公众号：cspiration（没错，和个人微信一样的～）</p>
+            <p>​ 本书完全是由我个人编写而成，所以文中所有讲解，分类等，我尽量以客观公正的态度写。而且这个版本我会不断更新，局部很多会在以后有改动，请大家敬请期待。如有意见和建议，请微信或者邮箱联系我：<a
+                    href="mailto:admin@cspiration.com">admin@cspiration.com</a></p>
+            <p>2018.6.19 </p>
+            <p>Edward Shi</p>
+            <div style="page-break-after: always;"></div>
+
+            <h2 id="102">1.2. Leetcode 题目视频讲解</h2>
+            <p>
+                所有题目进行视频讲解，刷题速度至少提升2-3倍。最优解 + 一题多解 + Test Case + 时间／空间复杂度
+                <a href="https://cspiration.com/course/leetcodeVideo">https://cspiration.com/course/leetcodeVideo</a>
+            </p>
+            <h2 id="103">1.3. Leetcode 分类顺序</h2>
+            <h3 id="10301">1.3.1. Array</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 27</td>
+                    <td>Remove Element</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 26</td>
+                    <td>Remove Duplicates from Sorted Array</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 80</td>
+                    <td>Remove Duplicates from Sorted Array II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 277</td>
+                    <td>Find the Celebrity</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 189</td>
+                    <td>Rotate Array</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 41</td>
+                    <td>First Missing Positive</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 299</td>
+                    <td>Bulls and Cows</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 134</td>
+                    <td>Gas Station</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 118</td>
+                    <td>Pascal's Triangle</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 119</td>
+                    <td>Pascal's Triangle II</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 169</td>
+                    <td>Majority Element</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 229</td>
+                    <td>Majority Element II</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 274</td>
+                    <td>H-Index</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 275</td>
+                    <td>H-Index II</td>
+                    <td>Binary Search</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 243</td>
+                    <td>Shortest Word Distance</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 244</td>
+                    <td>Shortest Word Distance II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 245</td>
+                    <td>Shortest Word Distance III</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 217</td>
+                    <td>Contains Duplicate</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 219</td>
+                    <td>Contains Duplicate II</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 220</td>
+                    <td>Contains Duplicate III</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 55</td>
+                    <td>Jump Game</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 45</td>
+                    <td>Jump Game II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 121</td>
+                    <td>Best Time to Buy and Sell Stock</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 122</td>
+                    <td>Best Time to Buy and Sell Stock II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 123</td>
+                    <td>Best Time to Buy and Sell Stock III</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 188</td>
+                    <td>Best Time to Buy and Sell Stock IV</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 309</td>
+                    <td>Best Time to Buy and Sell Stock with Cooldown</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 11</td>
+                    <td>Container With Most Water</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 42</td>
+                    <td>Trapping Rain Water</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 334</td>
+                    <td>Increasing Triplet Subsequence</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 128</td>
+                    <td>Longest Consecutive Sequence</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 164</td>
+                    <td>Maximum Gap</td>
+                    <td>Bucket</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 287</td>
+                    <td>Find the Duplicate Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 135</td>
+                    <td>Candy</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 330</td>
+                    <td>Patching Array</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>提高</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 4</td>
+                    <td>Median of Two Sorted Arrays</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 321</td>
+                    <td>Create Maximum Number</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 327</td>
+                    <td>Count of Range Sum</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 289</td>
+                    <td>Game of Life</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Interval</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 57</td>
+                    <td>Insert Interval</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 56</td>
+                    <td>Merge Intervals</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 252</td>
+                    <td>Meeting Rooms</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 253</td>
+                    <td>Meeting Rooms II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 352</td>
+                    <td>Data Stream as Disjoint Intervals</td>
+                    <td>TreeMap</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Counter</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 239</td>
+                    <td>Sliding Window Maximum</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 295</td>
+                    <td>Find Median from Data Stream</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 53</td>
+                    <td>Maximum Subarray</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 325</td>
+                    <td>Maximum Size Subarray Sum Equals k</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 209</td>
+                    <td>Minimum Size Subarray Sum</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 238</td>
+                    <td>Product of Array Except Self</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 152</td>
+                    <td>Maximum Product Subarray</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 228</td>
+                    <td>Summary Ranges</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 163</td>
+                    <td>Missing Ranges</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sort</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 88</td>
+                    <td>Merge Sorted Array</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 75</td>
+                    <td>Sort Colors</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 283</td>
+                    <td>Move Zeroes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 376</td>
+                    <td>Wiggle Subsequence</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 280</td>
+                    <td>Wiggle Sort</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 324</td>
+                    <td>Wiggle Sort II</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10302">1.3.2. String</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 28</td>
+                    <td>Implement strStr()</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 14</td>
+                    <td>Longest Common Prefix</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 58</td>
+                    <td>Length of Last Word</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 387</td>
+                    <td>First Unique Character in a String</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 383</td>
+                    <td>Ransom Note</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 344</td>
+                    <td>Reverse String</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 151</td>
+                    <td>Reverse Words in a String</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 186</td>
+                    <td>Reverse Words in a String II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 345</td>
+                    <td>Reverse Vowels of a String</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 205</td>
+                    <td>Isomorphic Strings</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 293</td>
+                    <td>Flip Game</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 294</td>
+                    <td>Flip Game II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 290</td>
+                    <td>Word Pattern</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 242</td>
+                    <td>Valid Anagram</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 49</td>
+                    <td>Group Anagrams</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 249</td>
+                    <td>Group Shifted Strings</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 87</td>
+                    <td>Scramble String</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 179</td>
+                    <td>Largest Number</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 6</td>
+                    <td>ZigZag Conversion</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 161</td>
+                    <td>One Edit Distance</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 38</td>
+                    <td>Count and Say</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 358</td>
+                    <td>Rearrange String k Distance Apart</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 316</td>
+                    <td>Remove Duplicate Letters</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 271</td>
+                    <td>Encode and Decode Strings</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 168</td>
+                    <td>Excel Sheet Column Title</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 171</td>
+                    <td>Excel Sheet Column Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 13</td>
+                    <td>Roman to Integer</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 12</td>
+                    <td>Integer to Roman</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 273</td>
+                    <td>Integer to English Words</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 246</td>
+                    <td>Strobogrammatic Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 247</td>
+                    <td>Strobogrammatic Number II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 248</td>
+                    <td>Strobogrammatic Number III</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>提高</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 68</td>
+                    <td>Text Justification</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 65</td>
+                    <td>Valid Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 157</td>
+                    <td>Read N Characters Given Read4</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 158</td>
+                    <td>Read N Characters Given Read4 II - Call multiple times</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Substring</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 76</td>
+                    <td>Minimum Window Substring</td>
+                    <td>Sliding Window</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 30</td>
+                    <td>Substring with Concatenation of All Words</td>
+                    <td>Sliding Window</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 3</td>
+                    <td>Longest Substring Without Repeating Characters</td>
+                    <td>Sliding Window</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 340</td>
+                    <td>Longest Substring with At Most K Distinct Characters</td>
+                    <td>Sliding Window</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 395</td>
+                    <td>Longest Substring with At Least K Repeating Characters</td>
+                    <td>Sliding Window</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 159</td>
+                    <td>Longest Substring with At Most Two Distinct Characters</td>
+                    <td>Sliding Window</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Palindrome</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 125</td>
+                    <td>Valid Palindrome</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 266</td>
+                    <td>Palindrome Permutation</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 5</td>
+                    <td>Longest Palindromic Substring</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 9</td>
+                    <td>Palindrome Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 214</td>
+                    <td>Shortest Palindrome</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 336</td>
+                    <td>Palindrome Pairs</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 131</td>
+                    <td>Palindrome Partitioning</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 132</td>
+                    <td>Palindrome Partitioning II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 267</td>
+                    <td>Palindrome Permutation II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Parentheses</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 20</td>
+                    <td>Valid Parentheses</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 22</td>
+                    <td>Generate Parentheses</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 32</td>
+                    <td>Longest Valid Parentheses</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 241</td>
+                    <td>Different Ways to Add Parentheses</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 301</td>
+                    <td>Remove Invalid Parentheses</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Subsequence</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 392</td>
+                    <td>Is Subsequence</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 115</td>
+                    <td>Distinct Subsequences</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 187</td>
+                    <td>Repeated DNA Sequences</td>
+                    <td>很少考</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10303">1.3.3. Math</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 7</td>
+                    <td>Reverse Integer</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 165</td>
+                    <td>Compare Version Numbers</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 66</td>
+                    <td>Plus One</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 8</td>
+                    <td>String to Integer (atoi)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 258</td>
+                    <td>Add Digits</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 67</td>
+                    <td>Add Binary</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 43</td>
+                    <td>Multiply Strings</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 29</td>
+                    <td>Divide Two Integers</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 69</td>
+                    <td>Sqrt(x)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 50</td>
+                    <td>Pow(x, n)</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 367</td>
+                    <td>Valid Perfect Square</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 365</td>
+                    <td>Water and Jug Problem</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 204</td>
+                    <td>Count Primes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Sum</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 1</td>
+                    <td>Two Sum</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 167</td>
+                    <td>Two Sum II - Input array is sorted</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 15</td>
+                    <td>3Sum</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 16</td>
+                    <td>3Sum Closest</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 259</td>
+                    <td>3Sum Smaller</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 18</td>
+                    <td>4Sum</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>很少考</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 231</td>
+                    <td>Power of Two</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 326</td>
+                    <td>Power of Three</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 342</td>
+                    <td>Power of Four</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 372</td>
+                    <td>Super Pow</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 233</td>
+                    <td>Number of Digit One</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 319</td>
+                    <td>Bulb Switcher</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 292</td>
+                    <td>Nim Game</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 202</td>
+                    <td>Happy Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 400</td>
+                    <td>Nth Digit</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 263</td>
+                    <td>Ugly Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 264</td>
+                    <td>Ugly Number II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 306</td>
+                    <td>Additive Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 172</td>
+                    <td>Factorial Trailing Zeroes</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 343</td>
+                    <td>Integer Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 396</td>
+                    <td>Rotate Function</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 390</td>
+                    <td>Elimination Game</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 386</td>
+                    <td>Lexicographical Numbers</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 357</td>
+                    <td>Count Numbers with Unique Digits</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 360</td>
+                    <td>Sort Transformed Array</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 397</td>
+                    <td>Integer Replacement</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 368</td>
+                    <td>Largest Divisible Subset</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10304">1.3.4. Tree</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 144</td>
+                    <td>Binary Tree Preorder Traversal</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 94</td>
+                    <td>Binary Tree Inorder Traversal</td>
+                    <td>Inorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 145</td>
+                    <td>Binary Tree Postorder Traversal</td>
+                    <td>postorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 102</td>
+                    <td>Binary Tree Level Order Traversal</td>
+                    <td>DFS + BFS</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Preorder</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 100</td>
+                    <td>Same Tree</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 101</td>
+                    <td>Symmetric Tree</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 226</td>
+                    <td>Invert Binary Tree</td>
+                    <td>preorder + BFS</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 257</td>
+                    <td>Binary Tree Paths</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 112</td>
+                    <td>Path Sum</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 113</td>
+                    <td>Path Sum II</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 129</td>
+                    <td>Sum Root to Leaf Numbers</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 298</td>
+                    <td>Binary Tree Longest Consecutive Sequence</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 111</td>
+                    <td>Minimum Depth of Binary Tree</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Postorder</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 104</td>
+                    <td>Maximum Depth of Binary Tree</td>
+                    <td>postorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 110</td>
+                    <td>Balanced Binary Tree</td>
+                    <td>postorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 124</td>
+                    <td>Binary Tree Maximum Path Sum</td>
+                    <td>postorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 250</td>
+                    <td>Count Univalue Subtrees</td>
+                    <td>postorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 366</td>
+                    <td>Find Leaves of Binary Tree</td>
+                    <td>postorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 337</td>
+                    <td>House Robber III</td>
+                    <td>postorder + preorder</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>BFS</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 107</td>
+                    <td>Binary Tree Level Order Traversal II</td>
+                    <td>BFS</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 103</td>
+                    <td>Binary Tree Zigzag Level Order Traversal</td>
+                    <td>BFS</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 199</td>
+                    <td>Binary Tree Right Side View</td>
+                    <td>BFS + preorder</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>BST</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 98</td>
+                    <td>Validate Binary Search Tree</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 235</td>
+                    <td>Lowest Common Ancestor of a Binary Search Tree</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 236</td>
+                    <td>Lowest Common Ancestor of a Binary Tree</td>
+                    <td>postorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 108</td>
+                    <td>Convert Sorted Array to Binary Search Tree</td>
+                    <td>binary search</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 109</td>
+                    <td>Convert Sorted List to Binary Search Tree</td>
+                    <td>binary search</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 173</td>
+                    <td>Binary Search Tree Iterator</td>
+                    <td>inorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 230</td>
+                    <td>Kth Smallest Element in a BST</td>
+                    <td>inorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 297</td>
+                    <td>Serialize and Deserialize Binary Tree</td>
+                    <td>BFS</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 285</td>
+                    <td>Inorder Successor in BST</td>
+                    <td>inorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 270</td>
+                    <td>Closest Binary Search Tree Value</td>
+                    <td>preorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 272</td>
+                    <td>Closest Binary Search Tree Value II</td>
+                    <td>inorder</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 99</td>
+                    <td>Recover Binary Search Tree</td>
+                    <td>inorder</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>重要程度</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 156</td>
+                    <td>Binary Tree Upside Down</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 114</td>
+                    <td>Flatten Binary Tree to Linked List</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 255</td>
+                    <td>Verify Preorder Sequence in Binary Search Tree</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 333</td>
+                    <td>Largest BST Subtree</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 222</td>
+                    <td>Count Complete Tree Nodes</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 105</td>
+                    <td>Construct Binary Tree from Preorder and Inorder Traversal</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 106</td>
+                    <td>Construct Binary Tree from Inorder and Postorder Traversal</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 116</td>
+                    <td>Populating Next Right Pointers in Each Node</td>
+                    <td>重要</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 117</td>
+                    <td>Populating Next Right Pointers in Each Node II</td>
+                    <td>重要</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 314</td>
+                    <td>Binary Tree Vertical Order Traversal</td>
+                    <td>重要</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 96</td>
+                    <td>Unique Binary Search Trees</td>
+                    <td>重要</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 95</td>
+                    <td>Unique Binary Search Trees II</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 331</td>
+                    <td>Verify Preorder Serialization of a Binary Tree</td>
+                    <td>很少考</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10305">1.3.5. Backtracking</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 78</td>
+                    <td>Subsets</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 90</td>
+                    <td>Subsets II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 77</td>
+                    <td>Combinations</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 39</td>
+                    <td>Combination Sum</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 40</td>
+                    <td>Combination Sum II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 216</td>
+                    <td>Combination Sum III</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 377</td>
+                    <td>Combination Sum IV</td>
+                    <td>Dynamic Programming</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 254</td>
+                    <td>Factor Combinations</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 46</td>
+                    <td>Permutations</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 47</td>
+                    <td>Permutations II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 31</td>
+                    <td>Next Permutation</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 60</td>
+                    <td>Permutation Sequence</td>
+                    <td>String</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 291</td>
+                    <td>Word Pattern II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>Enumeration</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 17</td>
+                    <td>Letter Combinations of a Phone Number</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 320</td>
+                    <td>Generalized Abbreviation</td>
+                    <td>要重录</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 93</td>
+                    <td>Restore IP Addresses</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 282</td>
+                    <td>Expression Add Operators</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 140</td>
+                    <td>Word Break II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 351</td>
+                    <td>Android Unlock Patterns</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10306">1.3.6. Dynamic Programming</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>一维</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 70</td>
+                    <td>Climbing Stairs</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 62</td>
+                    <td>Unique Paths</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 63</td>
+                    <td>Unique Paths II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 120</td>
+                    <td>Triangle</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 279</td>
+                    <td>Perfect Squares</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 139</td>
+                    <td>Word Break</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 375</td>
+                    <td>Guess Number Higher or Lower II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 312</td>
+                    <td>Burst Balloons</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 322</td>
+                    <td>Coin Change</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>二维</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 256</td>
+                    <td>Paint House</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 265</td>
+                    <td>Paint House II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 64</td>
+                    <td>Minimum Path Sum</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 72</td>
+                    <td>Edit Distance</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 97</td>
+                    <td>Interleaving String</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 174</td>
+                    <td>Dungeon Game</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 221</td>
+                    <td>Maximal Square</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 85</td>
+                    <td>Maximal Rectangle</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 363</td>
+                    <td>Max Sum of Rectangle No Larger Than K</td>
+                    <td>TreeSet</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>化简</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 198</td>
+                    <td>House Robber</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 213</td>
+                    <td>House Robber II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 276</td>
+                    <td>Paint Fence</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 91</td>
+                    <td>Decode Ways</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 10</td>
+                    <td>Regular Expression Matching</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 44</td>
+                    <td>Wildcard Matching</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10307">1.3.7. LinkedList</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 206</td>
+                    <td>Reverse Linked List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 141</td>
+                    <td>Linked List Cycle</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 24</td>
+                    <td>Swap Nodes in Pairs</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 328</td>
+                    <td>Odd Even Linked List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 92</td>
+                    <td>Reverse Linked List II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 237</td>
+                    <td>Delete Node in a Linked List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 19</td>
+                    <td>Remove Nth Node From End of List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 83</td>
+                    <td>Remove Duplicates from Sorted List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 203</td>
+                    <td>Remove Linked List Elements</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 82</td>
+                    <td>Remove Duplicates from Sorted List II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 369</td>
+                    <td>Plus One Linked List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 2</td>
+                    <td>Add Two Numbers</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 160</td>
+                    <td>Intersection of Two Linked Lists</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 21</td>
+                    <td>Merge Two Sorted Lists</td>
+                </tr>
+                <tr>
+                    <td>提高</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 234</td>
+                    <td>Palindrome Linked List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 143</td>
+                    <td>Reorder List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 142</td>
+                    <td>Linked List Cycle II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 148</td>
+                    <td>Sort List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 25</td>
+                    <td>Reverse Nodes in k-Group</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 61</td>
+                    <td>Rotate List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 86</td>
+                    <td>Partition List</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 23</td>
+                    <td>Merge k Sorted Lists</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 147</td>
+                    <td>Insertion Sort List</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10308">1.3.8. Binary Search</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 278</td>
+                    <td>First Bad Version</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 35</td>
+                    <td>Search Insert Position</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 33</td>
+                    <td>Search in Rotated Sorted Array</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 81</td>
+                    <td>Search in Rotated Sorted Array II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 153</td>
+                    <td>Find Minimum in Rotated Sorted Array</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 154</td>
+                    <td>Find Minimum in Rotated Sorted Array II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 162</td>
+                    <td>Find Peak Element</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 374</td>
+                    <td>Guess Number Higher or Lower</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 34</td>
+                    <td>Search for a Range</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 349</td>
+                    <td>Intersection of Two Arrays</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 350</td>
+                    <td>Intersection of Two Arrays II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 315</td>
+                    <td>Count of Smaller Numbers After Self</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 300</td>
+                    <td>Longest Increasing Subsequence</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 354</td>
+                    <td>Russian Doll Envelopes</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10309">1.3.9. Matrix</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>48</th>
+                    <th>Rotate Image</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 54</td>
+                    <td>Spiral Matrix</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 59</td>
+                    <td>Spiral Matrix II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 73</td>
+                    <td>Set Matrix Zeroes</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 311</td>
+                    <td>Sparse Matrix Multiplication</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 329</td>
+                    <td>Longest Increasing Path in a Matrix</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 378</td>
+                    <td>Kth Smallest Element in a Sorted Matrix</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 74</td>
+                    <td>Search a 2D Matrix</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 240</td>
+                    <td>Search a 2D Matrix II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 370</td>
+                    <td>Range Addition</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 79</td>
+                    <td>Word Search</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 296</td>
+                    <td>Best Meeting Point</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 361</td>
+                    <td>Bomb Enemy</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 317</td>
+                    <td>Shortest Distance from All Buildings</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 302</td>
+                    <td>Smallest Rectangle Enclosing Black Pixels</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 36</td>
+                    <td>Valid Sudoku</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 37</td>
+                    <td>Sudoku Solver</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10310">1.3.10. DFS &amp; BFS</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 200</td>
+                    <td>Number of Islands</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 286</td>
+                    <td>Walls and Gates</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 130</td>
+                    <td>Surrounded Regions</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 339</td>
+                    <td>Nested List Weight Sum</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 364</td>
+                    <td>Nested List Weight Sum II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 127</td>
+                    <td>Word Ladder</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 51</td>
+                    <td>N-Queens</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 52</td>
+                    <td>N-Queens II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 126</td>
+                    <td>Word Ladder II</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10311">1.3.11. Stack &amp; PriorityQueue</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>Stack</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 155</td>
+                    <td>Min Stack</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 232</td>
+                    <td>Implement Queue using Stacks</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 225</td>
+                    <td>Implement Stack using Queues</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 150</td>
+                    <td>Evaluate Reverse Polish Notation</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 71</td>
+                    <td>Simplify Path</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 388</td>
+                    <td>Longest Absolute File Path</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 394</td>
+                    <td>Decode String</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 224</td>
+                    <td>Basic Calculator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 227</td>
+                    <td>Basic Calculator II</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 385</td>
+                    <td>Mini Parser</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 84</td>
+                    <td>Largest Rectangle in Histogram</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>PriorityQueue</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 215</td>
+                    <td>Kth Largest Element in an Array</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 347</td>
+                    <td>Top K Frequent Elements</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 313</td>
+                    <td>Super Ugly Number</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 373</td>
+                    <td>Find K Pairs with Smallest Sums</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 218</td>
+                    <td>The Skyline Problem</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 332</td>
+                    <td>Reconstruct Itinerary</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 341</td>
+                    <td>Flatten Nested List Iterator</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10312">1.3.12. Bit Manipulation</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 389</td>
+                    <td>Find the Difference</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 136</td>
+                    <td>Single Number</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 318</td>
+                    <td>Maximum Product of Word Lengths</td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>很少考</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 393</td>
+                    <td>UTF-8 Validation</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 201</td>
+                    <td>Bitwise AND of Numbers Range</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 371</td>
+                    <td>Sum of Two Integers</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 338</td>
+                    <td>Counting Bits</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 89</td>
+                    <td>Gray Code</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 268</td>
+                    <td>Missing Number</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 191</td>
+                    <td>Number of 1 Bits</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 190</td>
+                    <td>Reverse Bits</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 137</td>
+                    <td>Single Number II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 260</td>
+                    <td>Single Number III</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10313">1.3.13. Topological Sort</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 207</td>
+                    <td>Course Schedule</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 210</td>
+                    <td>Course Schedule II</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 269</td>
+                    <td>Alien Dictionary</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10314">1.3.14. Random</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>模板</td>
+                    <td>Reservoir Sampling</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 384</td>
+                    <td>Shuffle an Array</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 398</td>
+                    <td>Random Pick Index</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 382</td>
+                    <td>Linked List Random Node</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 380</td>
+                    <td>Insert Delete GetRandom O(1)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 381</td>
+                    <td>Insert Delete GetRandom O(1) - Duplicates allowed</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 138</td>
+                    <td>Copy List with Random Pointer</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10315">1.3.15. Graph</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 133</td>
+                    <td>Clone Graph</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 399</td>
+                    <td>Evaluate Division</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 310</td>
+                    <td>Minimum Height Trees</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td>图形学</td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 335</td>
+                    <td>Self Crossing</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 149</td>
+                    <td>Max Points on a Line</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 356</td>
+                    <td>Line Reflection</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 391</td>
+                    <td>Perfect Rectangle</td>
+                    <td>很少考</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 223</td>
+                    <td>Rectangle Area</td>
+                    <td>很少考</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10316">1.3.16. Union FInd</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 261</td>
+                    <td>Graph Valid Tree</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 323</td>
+                    <td>Number of Connected Components in an Undirected Graph</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 305</td>
+                    <td>Number of Islands II</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10317">1.3.17. Trie</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 211</td>
+                    <td>Add and Search Word - Data structure design</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 208</td>
+                    <td>Implement Trie (Prefix Tree)</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 212</td>
+                    <td>Word Search II</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h3 id="10318">1.3.18. Design</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th>基础</th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 359</td>
+                    <td>Logger Rate Limiter</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 346</td>
+                    <td>Moving Average from Data Stream</td>
+                    <td>Sliding Window</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 362</td>
+                    <td>Design Hit Counter</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 281</td>
+                    <td>Zigzag Iterator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 284</td>
+                    <td>Peeking Iterator</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 251</td>
+                    <td>Flatten 2D Vector</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 288</td>
+                    <td>Unique Word Abbreviation</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 170</td>
+                    <td>Two Sum III - Data structure design</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 348</td>
+                    <td>Design Tic-Tac-Toe</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 379</td>
+                    <td>Design Phone Directory</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 353</td>
+                    <td>Design Snake Game</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 146</td>
+                    <td>LRU Cache</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 355</td>
+                    <td>Design Twitter</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 303</td>
+                    <td>Range Sum Query - Immutable</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 304</td>
+                    <td>Range Sum Query 2D - Immutable</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 307</td>
+                    <td>Range Sum Query - Mutable</td>
+                    <td>Binary Index Tree</td>
+                </tr>
+                <tr>
+                    <td><input type="checkbox"> &nbsp; 308</td>
+                    <td>Range Sum Query 2D - Mutable</td>
+                    <td>Binary Index Tree</td>
+                </tr>
+                </tbody>
+            </table>
+            <div style="page-break-after: always;"></div>
+
+            <h2 id="104">1.4. Leetcode 前 400 重点 250 题</h2>
+            <h3 id="10401">1.4.1. 划分说明</h3>
+            <p>这个重点题目是我个人把Leetcode前400题进行精简，精简方法如下：</p>
+            <ul>
+                <li>删除不常考，面试低频出现题目</li>
+                <li>删除重复代码题目（例：链表反转206题，代码在234题出现过）</li>
+                <li>删除过于简单题目（例：100题：Same Tree）</li>
+                <li>删除题意不同，代码基本相同题目（例：136 &amp; 389，保留一个）</li>
+            </ul>
+            <p>所有题目我尽量保证客观公正，只是按大概率删除不常考题目，很多题目面经出现过，但出现次数属于个位数或者只有一两家出现。所以<strong>如在面试中出现删除题目概不负责</strong>，这只是从<strong>概率</strong>上删除低频，简单题目。旨在减轻大家的刷题负担，从400题减少到250题。
+            </p>
+            <p>适用人群：有一定刷题基础，算法基础，<strong>二刷人群</strong>。</p>
+            <p><strong>建议：400题全部刷完，再精刷这250题。</strong></p>
+            <h3 id="10402">1.4.2. 重点题目</h3>
+            <table>
+                <thead>
+                <tr>
+                    <th style="text-align:center">ID</th>
+                    <th>Title</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 1</td>
+                    <td>Two Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 3</td>
+                    <td>Longest Substring Without Repeating Characters</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 4</td>
+                    <td>Median of Two Sorted Arrays</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 5</td>
+                    <td>Longest Palindromic Substring</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 7</td>
+                    <td>Reverse Integer</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 8</td>
+                    <td>String to Integer (atoi)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 10</td>
+                    <td>Regular Expression Matching</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 11</td>
+                    <td>Container With Most Water</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 12</td>
+                    <td>Integer to Roman</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 13</td>
+                    <td>Roman to Integer</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 15</td>
+                    <td>3Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 17</td>
+                    <td>Letter Combinations of a Phone Number</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 18</td>
+                    <td>4Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 20</td>
+                    <td>Valid Parentheses</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 22</td>
+                    <td>Generate Parentheses</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 23</td>
+                    <td>Merge k Sorted Lists</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 26</td>
+                    <td>Remove Duplicates from Sorted Array</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 27</td>
+                    <td>Remove Element</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 28</td>
+                    <td>Implement strStr()</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 29</td>
+                    <td>Divide Two Integers</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 31</td>
+                    <td>Next Permutation</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 32</td>
+                    <td>Longest Valid Parentheses</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 33</td>
+                    <td>Search in Rotated Sorted Array</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 34</td>
+                    <td>Search for a Range</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 35</td>
+                    <td>Search Insert Position</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 36</td>
+                    <td>Valid Sudoku</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 37</td>
+                    <td>Sudoku Solver</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 38</td>
+                    <td>Count and Say</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 39</td>
+                    <td>Combination Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 40</td>
+                    <td>Combination Sum II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 41</td>
+                    <td>First Missing Positive</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 42</td>
+                    <td>Trapping Rain Water</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 43</td>
+                    <td>Multiply Strings</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 44</td>
+                    <td>Wildcard Matching</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 45</td>
+                    <td>Jump Game II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 46</td>
+                    <td>Permutations</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 47</td>
+                    <td>Permutations II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 48</td>
+                    <td>Rotate Image</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 49</td>
+                    <td>Group Anagrams</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 50</td>
+                    <td>Pow(x, n)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 51</td>
+                    <td>N-Queens</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 52</td>
+                    <td>N-Queens II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 53</td>
+                    <td>Maximum Subarray</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 54</td>
+                    <td>Spiral Matrix</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 55</td>
+                    <td>Jump Game</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 56</td>
+                    <td>Merge Intervals</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 57</td>
+                    <td>Insert Interval</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 59</td>
+                    <td>Spiral Matrix II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 60</td>
+                    <td>Permutation Sequence</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 62</td>
+                    <td>Unique Paths</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 64</td>
+                    <td>Minimum Path Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 65</td>
+                    <td>Valid Number</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 66</td>
+                    <td>Plus One</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 67</td>
+                    <td>Add Binary</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 68</td>
+                    <td>Text Justification</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 69</td>
+                    <td>Sqrt(x)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 70</td>
+                    <td>Climbing Stairs</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 71</td>
+                    <td>Simplify Path</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 72</td>
+                    <td>Edit Distance</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 74</td>
+                    <td>Search a 2D Matrix</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 75</td>
+                    <td>Sort Colors</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 76</td>
+                    <td>Minimum Window Substring</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 77</td>
+                    <td>Combinations</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 78</td>
+                    <td>Subsets</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 79</td>
+                    <td>Word Search</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 80</td>
+                    <td>Remove Duplicates from Sorted Array II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 81</td>
+                    <td>Search in Rotated Sorted Array II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 82</td>
+                    <td>Remove Duplicates from Sorted List II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 84</td>
+                    <td>Largest Rectangle in Histogram</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 85</td>
+                    <td>Maximal Rectangle</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 88</td>
+                    <td>Merge Sorted Array</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 90</td>
+                    <td>Subsets II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 91</td>
+                    <td>Decode Ways</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 96</td>
+                    <td>Unique Binary Search Trees</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 98</td>
+                    <td>Validate Binary Search Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 101</td>
+                    <td>Symmetric Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 104</td>
+                    <td>Maximum Depth of Binary Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 108</td>
+                    <td>Convert Sorted Array to Binary Search Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 110</td>
+                    <td>Balanced Binary Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 111</td>
+                    <td>Minimum Depth of Binary Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 112</td>
+                    <td>Path Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 113</td>
+                    <td>Path Sum II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 115</td>
+                    <td>Distinct Subsequences</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 116</td>
+                    <td>Populating Next Right Pointers in Each Node</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 117</td>
+                    <td>Populating Next Right Pointers in Each Node II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 121</td>
+                    <td>Best Time to Buy and Sell Stock</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 122</td>
+                    <td>Best Time to Buy and Sell Stock II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 123</td>
+                    <td>Best Time to Buy and Sell Stock III</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 124</td>
+                    <td>Binary Tree Maximum Path Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 125</td>
+                    <td>Valid Palindrome</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 126</td>
+                    <td>Word Ladder II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 127</td>
+                    <td>Word Ladder</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 128</td>
+                    <td>Longest Consecutive Sequence</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 130</td>
+                    <td>Surrounded Regions</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 133</td>
+                    <td>Clone Graph</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 134</td>
+                    <td>Gas Station</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 138</td>
+                    <td>Copy List with Random Pointer</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 139</td>
+                    <td>Word Break</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 140</td>
+                    <td>Word Break II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 142</td>
+                    <td>Linked List Cycle II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 146</td>
+                    <td>LRU Cache</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 149</td>
+                    <td>Max Points on a Line</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 150</td>
+                    <td>Evaluate Reverse Polish Notation</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 152</td>
+                    <td>Maximum Product Subarray</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 153</td>
+                    <td>Find Minimum in Rotated Sorted Array</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 154</td>
+                    <td>Find Minimum in Rotated Sorted Array II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 155</td>
+                    <td>Min Stack</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 157</td>
+                    <td>Read N Characters Given Read4</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 158</td>
+                    <td>Read N Characters Given Read4 II - Call multiple times</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 161</td>
+                    <td>One Edit Distance</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 162</td>
+                    <td>Find Peak Element</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 163</td>
+                    <td>Missing Ranges</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 168</td>
+                    <td>Excel Sheet Column Title</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 171</td>
+                    <td>Excel Sheet Column Number</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 173</td>
+                    <td>Binary Search Tree Iterator</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 186</td>
+                    <td>Reverse Words in a String II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 174</td>
+                    <td>Dungeon Game</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 188</td>
+                    <td>Best Time to Buy and Sell Stock IV</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 189</td>
+                    <td>Rotate Array</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 191</td>
+                    <td>Number of 1 Bits</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 198</td>
+                    <td>House Robber</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 200</td>
+                    <td>Number of Islands</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 201</td>
+                    <td>Bitwise AND of Numbers Range</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 202</td>
+                    <td>Happy Number</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 204</td>
+                    <td>Count Primes</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 205</td>
+                    <td>Isomorphic Strings</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 207</td>
+                    <td>Course Schedule</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 208</td>
+                    <td>Implement Trie (Prefix Tree)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 209</td>
+                    <td>Minimum Size Subarray Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 210</td>
+                    <td>Course Schedule II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 211</td>
+                    <td>Add and Search Word - Data structure design</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 212</td>
+                    <td>Word Search II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 213</td>
+                    <td>House Robber II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 214</td>
+                    <td>Shortest Palindrome</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 215</td>
+                    <td>Kth Largest Element in an Array</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 216</td>
+                    <td>Combination Sum III</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 217</td>
+                    <td>Contains Duplicate</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 218</td>
+                    <td>The Skyline Problem</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 219</td>
+                    <td>Contains Duplicate II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 220</td>
+                    <td>Contains Duplicate III</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 221</td>
+                    <td>Maximal Square</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 224</td>
+                    <td>Basic Calculator</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 225</td>
+                    <td>Implement Stack using Queues</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 226</td>
+                    <td>Invert Binary Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 227</td>
+                    <td>Basic Calculator II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 228</td>
+                    <td>Summary Ranges</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 230</td>
+                    <td>Kth Smallest Element in a BST</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 231</td>
+                    <td>Power of Two</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 232</td>
+                    <td>Implement Queue using Stacks</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 235</td>
+                    <td>Lowest Common Ancestor of a Binary Search Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 236</td>
+                    <td>Lowest Common Ancestor of a Binary Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 238</td>
+                    <td>Product of Array Except Self</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 239</td>
+                    <td>Sliding Window Maximum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 240</td>
+                    <td>Search a 2D Matrix II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 241</td>
+                    <td>Different Ways to Add Parentheses</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 242</td>
+                    <td>Valid Anagram</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 244</td>
+                    <td>Shortest Word Distance II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 245</td>
+                    <td>Shortest Word Distance III</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 249</td>
+                    <td>Group Shifted Strings</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 251</td>
+                    <td>Flatten 2D Vector</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 252</td>
+                    <td>Meeting Rooms</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 253</td>
+                    <td>Meeting Rooms II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 254</td>
+                    <td>Factor Combinations</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 256</td>
+                    <td>Paint House</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 257</td>
+                    <td>Binary Tree Paths</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 261</td>
+                    <td>Graph Valid Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 263</td>
+                    <td>Ugly Number</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 264</td>
+                    <td>Ugly Number II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 265</td>
+                    <td>Paint House II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 268</td>
+                    <td>Missing Number</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 269</td>
+                    <td>Alien Dictionary</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 270</td>
+                    <td>Closest Binary Search Tree Value</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 271</td>
+                    <td>Encode and Decode Strings</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 273</td>
+                    <td>Integer to English Words</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 274</td>
+                    <td>H-Index</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 275</td>
+                    <td>H-Index II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 276</td>
+                    <td>Paint Fence</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 277</td>
+                    <td>Find the Celebrity</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 278</td>
+                    <td>First Bad Version</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 279</td>
+                    <td>Perfect Squares</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 280</td>
+                    <td>Wiggle Sort</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 282</td>
+                    <td>Expression Add Operators</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 283</td>
+                    <td>Move Zeroes</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 284</td>
+                    <td>Peeking Iterator</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 285</td>
+                    <td>Inorder Successor in BST</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 286</td>
+                    <td>Walls and Gates</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 287</td>
+                    <td>Find the Duplicate Number</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 288</td>
+                    <td>Unique Word Abbreviation</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 289</td>
+                    <td>Game of Life</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 290</td>
+                    <td>Word Pattern</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 291</td>
+                    <td>Word Pattern II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 293</td>
+                    <td>Flip Game</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 294</td>
+                    <td>Flip Game II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 295</td>
+                    <td>Find Median from Data Stream</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 296</td>
+                    <td>Best Meeting Point</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 297</td>
+                    <td>Serialize and Deserialize Binary Tree</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 298</td>
+                    <td>Binary Tree Longest Consecutive Sequence</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 299</td>
+                    <td>Bulls and Cows</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 300</td>
+                    <td>Longest Increasing Subsequence</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 301</td>
+                    <td>Remove Invalid Parentheses</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 302</td>
+                    <td>Smallest Rectangle Enclosing Black Pixels</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 305</td>
+                    <td>Number of Islands II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 307</td>
+                    <td>Range Sum Query - Mutable</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 308</td>
+                    <td>Range Sum Query 2D - Mutable</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 309</td>
+                    <td>Best Time to Buy and Sell Stock with Cooldown</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 311</td>
+                    <td>Sparse Matrix Multiplication</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 312</td>
+                    <td>Burst Balloons</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 314</td>
+                    <td>Binary Tree Vertical Order Traversal</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 316</td>
+                    <td>Remove Duplicate Letters</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 317</td>
+                    <td>Shortest Distance from All Buildings</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 318</td>
+                    <td>Maximum Product of Word Lengths</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 322</td>
+                    <td>Coin Change</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 323</td>
+                    <td>Number of Connected Components in an Undirected Graph</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 324</td>
+                    <td>Wiggle Sort II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 325</td>
+                    <td>Maximum Size Subarray Sum Equals k</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 329</td>
+                    <td>Longest Increasing Path in a Matrix</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 334</td>
+                    <td>Increasing Triplet Subsequence</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 336</td>
+                    <td>Palindrome Pairs</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 337</td>
+                    <td>House Robber III</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 338</td>
+                    <td>Counting Bits</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 339</td>
+                    <td>Nested List Weight Sum</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 340</td>
+                    <td>Longest Substring with At Most K Distinct Characters</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 341</td>
+                    <td>Flatten Nested List Iterator</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 346</td>
+                    <td>Moving Average from Data Stream</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 347</td>
+                    <td>Top K Frequent Elements</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 348</td>
+                    <td>Design Tic-Tac-Toe</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 350</td>
+                    <td>Intersection of Two Arrays II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 351</td>
+                    <td>Android Unlock Patterns</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 352</td>
+                    <td>Data Stream as Disjoint Intervals</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 353</td>
+                    <td>Design Snake Game</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 354</td>
+                    <td>Russian Doll Envelopes</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 355</td>
+                    <td>Design Twitter</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 359</td>
+                    <td>Logger Rate Limiter</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 361</td>
+                    <td>Bomb Enemy</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 362</td>
+                    <td>Design Hit Counter</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 364</td>
+                    <td>Nested List Weight Sum II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 367</td>
+                    <td>Valid Perfect Square</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 374</td>
+                    <td>Guess Number Higher or Lower</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 375</td>
+                    <td>Guess Number Higher or Lower II</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 376</td>
+                    <td>Wiggle Subsequence</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 377</td>
+                    <td>Combination Sum IV</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 378</td>
+                    <td>Kth Smallest Element in a Sorted Matrix</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 379</td>
+                    <td>Design Phone Directory</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 380</td>
+                    <td>Insert Delete GetRandom O(1)</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 381</td>
+                    <td>Insert Delete GetRandom O(1) - Duplicates allowed</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 384</td>
+                    <td>Shuffle an Array</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 385</td>
+                    <td>Mini Parser</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 389</td>
+                    <td>Find the Difference</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 394</td>
+                    <td>Decode String</td>
+                </tr>
+                <tr>
+                    <td style="text-align:center"><input type="checkbox"> &nbsp; 398</td>
+                    <td>Random Pick Index</td>
+                </tr>
+                </tbody>
+            </table>
+            <h2 id="105">1.5. 参考网站</h2>
+            <p>​ <a href="https://leetcode.com/">https://leetcode.com/</a></p>
+            <h2 id="106">1.6. 微信公众号：cspiration</h2>
+            <p><img src="./Leetcode 分类顺序第二版_files/CspirationWechat.jpg" alt=""></p>
+            <h2 id="107">1.7. 个人微信号：cspiration</h2>
+            <p><img src="./Leetcode 分类顺序第二版_files/wechat.jpeg" alt=""></p>
+
+        </article>
+    </div>
+</div>
+
+
+<style>
+    #zxd_x {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        font-size: 16px;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+        cursor: pointer;
+    }
+</style>
+<div style="z-index:999;display: block; position: fixed; right: 50px; top: 150px;">
+    <div id="zxd_x">
+        <p>
+            <button id="save" type="button" onclick="save()">保存进度</button>
+        </p>
+        <p>
+            <button id="load" type="button" onclick="load()">加载进度</button>
+        </p>
+        <p>
+            <button id="clean" type="button" onclick="clean()">清空进度</button>
+        </p>
+        <p>
+            <button id="cleanAll" type="button" onclick="cleanAll()">清除缓存</button>
+        </p>
+    </div>
+</div>
+
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript">
+    function save() {
+        let checkBoxArray = [];
+        $(":checkbox").each(function () {
+            checkBoxArray.push(this.checked);
+        });
+        localStorage.setItem('boxes', JSON.stringify(checkBoxArray));
+        alert("你的做题进度已保存，继续加油！");
+    }
+
+    function load() {
+        if(localStorage.getItem('boxes') == null){
+            clean();
+        }
+
+        let checkBoxArray = JSON.parse(localStorage.getItem('boxes'));
+        let i = 0;
+        $(":checkbox").each(function () {
+            this.checked = checkBoxArray[i];
+            i++;
+        });
+        alert("你的做题进度已加载，继续加油！");
+    }
+
+    function clean() {
+        $(":checkbox").each(function () {
+            this.checked = false;
+        });
+        alert("你的做题进度已被清空");
+    }
+
+    function cleanAll() {
+        localStorage.removeItem('boxes');
+        alert("缓存已清除");
+    }
+</script>
+
+<script type="text/javascript" src="./Leetcode 分类顺序第二版_files/jquery-1.4.4.min.js"></script>
+<script type="text/javascript" src="./Leetcode 分类顺序第二版_files/jquery.ztree.all-3.5.min.js"></script>
+<script type="text/javascript" src="./Leetcode 分类顺序第二版_files/ztree_toc.js"></script>
+<script type="text/javascript" src="./Leetcode 分类顺序第二版_files/toc_conf.js"></script>
+
+<script type="text/javascript">
+    <!--
+    $(document).ready(function () {
+        var css_conf = eval(markdown_panel_style);
+        $('#readme').css(css_conf)
+
+        var conf = eval(jquery_ztree_toc_opts);
+        $('#tree').ztree_toc(conf);
+    });
+    //-->
+</script>
+</body>
+</html>
+
