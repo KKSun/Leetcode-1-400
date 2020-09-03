@@ -1,10 +1,8 @@
 # Leetcode-1-400
 
-原网站：https://cspiration.com/leetcodeClassification
-
 原作者：https://github.com/Cspiration
 
-这是Edward Shi在原网站上总结的Leetcode 1-400 题的离线版本。
+这是原作者网站上的`Leetcode 1-400`的离线版本。
 
 为每一题新加入了checkbox，可以保存做题进度。
 
